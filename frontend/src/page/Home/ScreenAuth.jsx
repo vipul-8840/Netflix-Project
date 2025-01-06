@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom"
-import { ChevronRight } from "lucide-react";
+import { ChevronRight} from "lucide-react";
+import { cardData } from "../../utils/constant";
+
 
 
 const ScreenAuth = () => {
@@ -143,28 +145,30 @@ const ScreenAuth = () => {
 			</div>
 
 
-			<div className='h-2 w-full bg-[#232323]' aria-hidden='true' />
+			
 
-			{/* 4th section*/}
-			<div className='py-10 bg-black text-white'>
-				<div
-					className='flex max-w-6xl mx-auto items-center justify-center flex-col-reverse md:flex-row
-           px-4 md:px-2
-        '
-				>
-					{/* left */}
-					<div className='flex-1 relative'>
-						<img src='/kids.png' alt='Enjoy on your TV' className='mt-4' />
+			
+			<div className='py-2 bg-black text-white'>
+								<div className="flex-1 text-center md:text-left">
+								<h3 className="text-3xl md:px-52 md:text-3xl font-extrabold mb-4">More reasons to join</h3>
+							<div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-6 px-4 max-w-6xl mx-auto items-stretch">
+							{cardData.map((card, index) => (
+								<div
+									key={index}
+									className="bg-gradient-to-b from-darkGray to-customPurple rounded-2xl shadow-lg p-6 flex flex-col justify-between h-44 md:h-72 relative" 
+								>
+									<div>
+										<h1 className="text-xl font-semibold mb-4">{card.heading}</h1>
+										<p className="text-sm text-gray-100">{card.description}</p>
+									</div>
+									<div className="absolute bottom-0 right-0 p-4 md:p-4 sm:p-2 "> 
+										<card.icon className=" text-purple-500 text-5xl  h-20 w-14" /> 
+									</div>
+								</div>
+							))}
+						</div>
 					</div>
-					{/* right */}
-					<div className='flex-1 text-center md:text-left'>
-						<h2 className='text-4xl md:text-5xl font-extrabold mb-4'>Create profiles for kids</h2>
-						<p className='text-lg md:text-xl'>
-							Send kids on adventures with their favorite characters in a space made just for them—free
-							with your membership.
-						</p>
-					</div>
-				</div>
+
 			</div>
 
       

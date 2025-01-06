@@ -6,7 +6,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        darkGray: '#111111',
+        customPurple: '#6B21A8', 
+         customPink: 'rgb(255, 0, 93)'
+      },
+    },
   },
   plugins: [tailwindScrollbarHide],
 }
