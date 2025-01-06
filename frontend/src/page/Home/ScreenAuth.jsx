@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom"
 import { ChevronRight } from "lucide-react";
 
 
-const AuthScreen = () => {
+const ScreenAuth = () => {
 	
     const [email,setEmail]=useState("");
 	const navigate = useNavigate();
@@ -172,4 +172,4 @@ const AuthScreen = () => {
   )
 }
 
-export default AuthScreen
+export default ScreenAuth;

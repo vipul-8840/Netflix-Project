@@ -1,6 +1,8 @@
 import { useAuthStore } from "../../store/authUser";
-import AuthScreen from "./AuthScreen";
-import HomeScreen from "./HomeScreen";
+
+
+import PageHome from "./PageHome";
+import ScreenAuth from "./ScreenAuth";
 
 
 const Home = () => {
@@ -8,7 +10,7 @@ const Home = () => {
   return (
     <div>
         
-      {user ? <HomeScreen/>:<AuthScreen/>}
+      {user ? <PageHome/>:<ScreenAuth/>}
 
     </div>
   

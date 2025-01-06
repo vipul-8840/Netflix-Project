@@ -2,7 +2,7 @@ import { Route, Routes, Navigate } from "react-router-dom"
 
 import Signup from "./page/Signup"
 import Login from "./page/Login"
-import Home from "./page/home/home"
+import Home from "./page/Home/HomePage"
 import Footer from "./components/footer"
 import { useEffect } from "react"
 import { Loader } from "lucide-react";

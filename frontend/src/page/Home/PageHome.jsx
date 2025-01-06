@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import { Info, Play } from "lucide-react";
@@ -8,8 +7,8 @@ import { useContentStore } from "../../store/content";
 import MovieSlider from "../../components/MovieSlider";
 import { useState } from "react";
 
-const HomeScreen = () => {
-  const { trendingContent } = useGetTrendingContent();
+const PageHome = () => {
+  const { trendingContent } =useGetTrendingContent();
 	const { contentType } = useContentStore();
 	const [imgLoading, setImgLoading] = useState(true);
 
@@ -95,4 +94,4 @@ const HomeScreen = () => {
 	);
 }
 
-export default HomeScreen
+export default PageHome;
