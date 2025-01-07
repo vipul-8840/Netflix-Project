@@ -50,6 +50,51 @@ This is a Netflix clone project built with Node.js, Express, and MongoDB. It inc
 
 5. Open your browser and navigate to `http://localhost:3000` (or the port you specified).
 
+## Frontend
+
+The frontend of this project is built using React and Vite. It includes configurations for ESLint and Tailwind CSS.
+
+### Setup
+
+1. Navigate to the frontend directory:
+   ```sh
+   cd frontend
+   ```
+
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
+
+### Configuration
+
+- **Vite**: The project uses Vite for fast builds and hot module replacement.
+- **Tailwind CSS**: Tailwind CSS is used for styling.
+- **ESLint**: ESLint is configured to enforce coding standards and best practices.
+
+### Available Scripts
+
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the project for production.
+- `npm run lint`: Runs ESLint to check for linting errors.
+
+### Directory Structure
+
+- `src/`: Contains the source code for the frontend.
+- `public/`: Contains static assets like the favicon.
+
+### Additional Information
+
+For more details on the frontend setup and configuration, refer to the respective configuration files:
+- `vite.config.js`
+- `tailwind.config.js`
+- `eslint.config.js`
+
 ## API Endpoints
 
 ### Auth Routes
