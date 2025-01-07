@@ -1,5 +1,7 @@
 # Netflix Clone
 
+![Netflix Clone](./path/to/your/image.png)
+
 This is a Netflix clone project built with Node.js, Express, and MongoDB. It includes user authentication, movie and TV show browsing, and search functionality.
 
 ## Features
